@@ -1,0 +1,19 @@
+pkgbase = mkinitcpio-encryptssh
+	pkgdesc = Hook to enable disk decryption over SSH in early userspace
+	pkgver = 1.0.0
+	pkgrel = 1
+	arch = any
+	license = BSD-3-Clause
+	depends = cryptsetup
+	depends = dropbear
+	depends = iproute2
+	depends = mkinitcpio-nfs-utils
+	depends = psmisc
+	source = mkinitcpio-dropbear-1.0.0.tar.gz::https://github.com/pettinen/mkinitcpio-dropbear/archive/refs/tags/v1.0.0.tar.gz
+	source = mkinitcpio-netconf-1.0.0.tar.gz::https://github.com/pettinen/mkinitcpio-netconf/archive/refs/tags/v1.0.0.tar.gz
+	source = mkinitcpio-utils-1.0.0.tar.gz::https://github.com/pettinen/mkinitcpio-utils/archive/refs/tags/v1.0.0.tar.gz
+	sha256sums = 2652fad914809a2da6e2f0d7a4e97ea5c721958ab422bfc90581073e57aab9c6
+	sha256sums = 56e7219fb7dfe2708f85e3f4ebc71a094632b7ddc4d501b382f63768027e3864
+	sha256sums = 28cbae93926698b393d048326545acdd8f5765e51fd6faf5c155ba2514698b64
+
+pkgname = mkinitcpio-encryptssh
